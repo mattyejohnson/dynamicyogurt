@@ -15,7 +15,7 @@
 			<div>
 				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
 				<ul id="navigation">
-					<li>
+					<li class="menu">
 						<a href="index.html">Home</a>
 					</li>
 					<li class="menu">
@@ -34,7 +34,7 @@
 							</li>
 						</ul>
 					</li>
-					<li class="selected">
+					<li class = "menu">
 						<a href="contact.html">Contact</a>
 						<ul class="secondary">
 							<li>
@@ -54,21 +54,29 @@
 			<div class="body">
 				<div>
 					<div>
-						<img src="images/check-in.png" alt="">
-						<h1>UNIT 0123 , ABC BUILDING, BUSSINESS PARK</h1>
-						<p>If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</p>
+						<h1>OUR LOCATION</h1>
+						<iframe width="100%" height="400px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/untitled-map_738719?scaleControl=true&miniMap=false&scrollWheelZoom=true&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false&datalayers=2175582&locateControl=true"></iframe><p><a href="//umap.openstreetmap.fr/en/map/untitled-map_738719">See full screen</a></p>
 					</div>
 				</div>
 			</div>
 			<div class="footer">
 				<div class="contact">
 					<h1>INQUIRY FORM</h1>
-					<form action="index.html">
-						<input type="text" name="Name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Email" value="Email" onblur="this.value=!this.value?'Email':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<textarea name="meassage" cols="50" rows="7">Share your thoughts</textarea>
-						<input type="submit" value="Send" id="submit">
+					<!-- modify this form HTML and place wherever you want your form -->
+					<form
+						action="https://formspree.io/f/mgedlklk"
+						method="POST"
+					>
+					<label>
+  						Your email:
+  						<input type="email" name="email">
+					</label>
+					<label>
+  						Your message:
+  						<textarea name="message"></textarea>
+					</label>
+					<!-- your other form fields go here -->
+					<button type="submit">Send</button>
 					</form>
 				</div>
 				<div class="section">
